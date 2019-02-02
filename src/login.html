@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="./css/style.css" rel="stylesheet">
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            width: 100vw;
+            background: linear-gradient(45deg,rgb(0, 102, 218),rgb(62, 0, 177),rgb(31,52,200))
+        }
+    </style>
+    <script src="js/all.min.js"></script>
+</head>
+<body>
+    <div class="container authenticate">
+        <div class="row">
+            <div class="col-sm-6 choices">
+                <div class="authentic-choices">
+                    <div class="text-center"> <span class="choose">Choose</span> </div>
+                    <div class="mt-5 text-center">
+                            <button id = "login" class="btn">Login</button>
+                            <button id = "sign-up" class="btn">Sign-Up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                    <div class="form login">
+                            <div class="text-center"> <span class="sign-in">Sign In</span> </div>
+                            <form action="login.html" method="post" class="mt-5" autocomplete="off">
+                              <div class="form-group">
+                                <input type="email" class="form-control border-radius-50 input-control" placeholder="username" name="username" id="username">
+                              </div>
+                              <div class="form-group">
+                                  <input type="password" class="form-control border-radius-50 input-control" placeholder="password" name="pwd" id="password">
+                              </div>
+                              <div class="text-center"> <button type="submit" class="submit">Log In</button> </div>
+                              <div class="text-center mt-5 pt-4 text-lighter">Or login with</div>
+                              <div class="text-center my-2 d-flex justify-content-center">
+                                <a href="#" class="login-icon">
+                                  <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="login-icon">
+                                  <img src="./assets/icon-google.png" alt="">
+                                </a>
+                                  
+                              </div>
+                              <div class="position-absolute" style="bottom:20px; left:50%; transform:translateX(-50%);">
+                                <a href="#" class="text-dark">Sign Up</a>
+                              </div>
+                            </form>
+                          </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
