@@ -1,0 +1,143 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: "Roboto";
+}
+.text-bbb{
+    color: #bcbcbc !important;
+}
+.text-light{
+    font-weight: lighter;   
+}
+.inc-size{
+    font-size: 150%;
+}
+a{
+    color: #222;
+}
+a:hover{
+    text-decoration: underline;
+    color: #111
+}
+.font-bold{
+    font-weight: bold;
+}
+.open-sans{
+    font-family: "Open Sans",Helvetica;
+}
+.font-bigger{
+    font-size: 120%;
+}
+
+/************************************************* navbar ********************************************************/
+.navbar{
+    background: rgb(59,64,68);
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+.dropdown-menu{
+    background-color: rgba(31,31,31,1);
+    border-radius: 0;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.dropdown-menu a{
+    color: #bcbcbc;
+    transition: hover .5s;
+}
+.dropdown-menu a:hover{
+    background: transparent; 
+    color: #6cd;
+}
+.active-nav{
+    color: rgb(96,190,211);
+}
+
+
+
+
+
+
+.category{
+    background: #f2f2f2;
+}
+.category p{
+    margin: 0;
+}
+
+.small-font{
+    font-size: 90%;
+}
+
+
+
+
+
+
+.course-info{
+    background: linear-gradient(0deg,rgb(59,64,68),rgb(55,60,64));
+    color: white;
+}
+.course-title{
+    
+}
+.course-img{
+    height: 270px;
+}
+.course-img img{
+    max-width: 100%;
+    height: 100%;
+}
+.stars{
+    color: gold;
+}
+.rating{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    padding-right: 35px;
+    width: 40%;
+}
+.course-section-container{
+    
+}
+.course-section-link{
+    border: 1px solid #9a9a9a;
+    cursor: pointer;
+    background: #efefef;
+    width: 100%;
+    padding: 10px 10px 10px 20px ;
+}
+.course-section-info{
+    flex-basis: 30%;
+    margin-left: 15px;
+}
+.nof-lectures{
+    flex-basis: 50%;
+}
+.course-section-lectures{
+    flex-basis:50%;
+    text-align: center
+}
+.course-section-time{
+    flex-basis: 50%;
+}

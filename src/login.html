@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="./css/style.css" rel="stylesheet">
+
     <style>
         body{
             height: 100vh;
@@ -16,6 +17,7 @@
         }
     </style>
     <script src="js/all.min.js"></script>
+    <script src="js/prev.js"></script>
 </head>
 <body>
     <div class="container authenticate">
@@ -24,37 +26,66 @@
                 <div class="authentic-choices">
                     <div class="text-center"> <span class="choose">Choose</span> </div>
                     <div class="mt-5 text-center">
-                            <button id = "login" class="btn">Login</button>
-                            <button id = "sign-up" class="btn">Sign-Up</button>
+                        <div class="btn-container">
+                            <button id = "login" class="btn-choose" onclick="showLogin()">Login</button>
+                            <button id = "sign-up" class="btn-choose" onclick="showSignUp()">Sign-Up</button>
+                        </div>    
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-12 col-lg-6 position-relative show-from">
                     <div class="form login">
-                            <div class="text-center"> <span class="sign-in">Sign In</span> </div>
-                            <form action="login.html" method="post" class="mt-5" autocomplete="off">
-                              <div class="form-group">
-                                <input type="email" class="form-control border-radius-50 input-control" placeholder="username" name="username" id="username">
-                              </div>
-                              <div class="form-group">
-                                  <input type="password" class="form-control border-radius-50 input-control" placeholder="password" name="pwd" id="password">
-                              </div>
-                              <div class="text-center"> <button type="submit" class="submit">Log In</button> </div>
-                              <div class="text-center mt-5 pt-4 text-lighter">Or login with</div>
-                              <div class="text-center my-2 d-flex justify-content-center">
-                                <a href="#" class="login-icon">
-                                  <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="login-icon">
-                                  <img src="./assets/icon-google.png" alt="">
-                                </a>
-                                  
-                              </div>
-                              <div class="position-absolute" style="bottom:20px; left:50%; transform:translateX(-50%);">
-                                <a href="#" class="text-dark">Sign Up</a>
-                              </div>
-                            </form>
-                          </div>
+                      <div class="text-center"> <span class="sign-in">Sign In</span> </div>
+                      <form action="login.html" method="post" class="mt-5" autocomplete="off">
+                        <div class="form-group">
+                          <input type="email" class="form-control border-radius-50 input-control" placeholder="username" name="username" id="username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control border-radius-50 input-control" placeholder="password" name="pwd" id="password">
+                        </div>
+                        <div class="text-center"> <button type="submit" class="submit">Log In</button> </div>
+                        <div class="text-center mt-5 pt-4 text-lighter">Or login with</div>
+                        <div class="text-center my-2 d-flex justify-content-center">
+                          <a href="#" class="login-icon">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="#" class="login-icon">
+                            <img src="./assets/icon-google.png" alt="">
+                          </a>
+                            
+                        </div>
+                        <div class="position-absolute" style="bottom:20px; left:50%; transform:translateX(-50%);">
+                          <a href="#" class="text-dark">Sign Up</a>
+                        </div>
+                      </form>
+
+                    </div>
+                    <div class="form sign-up">
+                        <div class="text-center"><span class="sign-in">Sign Up</span></div>
+                        <form action="" method="post" class="mt-5">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" class="form-control border-radius-50 input-control" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control border-radius-50 input-control" placeholder="email">
+                            </div>
+                            <div class="form-group"><input type="password" name="pwd" id="pwd" class="form-control border-radius-50 input-control" placeholder="password"></div>
+                            <div class="text-center"> <button type="submit" class="submit" name="signup">Sign Up</button> </div>
+                            <div class="text-center mt-2 pt-4 text-lighter">Or Sign-Up with</div>
+                            <div class="text-center my-2 d-flex justify-content-center">
+                            <a href="#" class="signup-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="signup-icon">
+                                <img src="./assets/icon-google.png" alt="">
+                            </a>
+                                
+                            </div>
+                            <div class="position-absolute" style="bottom:20px; left:50%; transform:translateX(-50%);">
+                                <a href="#" class="text-dark">Sign In</a>
+                            </div>
+                        </form>
+                    </div>
             </div>
         </div>
     </div>
